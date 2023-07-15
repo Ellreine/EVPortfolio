@@ -1,5 +1,11 @@
+import { General } from './components';
+
 const App = () => {
-	return <div></div>;
+	return (
+		<div>
+			<General />
+		</div>
+	);
 };
 
 export default App;
