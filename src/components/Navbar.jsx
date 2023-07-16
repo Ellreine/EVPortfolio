@@ -1,6 +1,6 @@
 const Navbar = () => {
 	return (
-		<div className="flex justify-center items-center">
+		<div className="flex justify-center items-center z-10">
 			<div></div>
 			<div className="flex justify-center items-center">
 				<h3 className="nav-link" id="general">
