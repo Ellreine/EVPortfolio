@@ -9,6 +9,9 @@ export default {
 			backgroundImage: {
 				'black-gradient': 'var(--black-gradient)',
 			},
+			colors: {
+				primary: 'var(--primary)',
+			},
 		},
 		screens: {
 			xs: '480px',

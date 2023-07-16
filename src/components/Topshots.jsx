@@ -37,10 +37,10 @@ const Slider = () => {
 
 const Topshots = () => {
 	return (
-		<div className="flex flex-col justify-center items-center sm:py-6 py-2 text-white bg-black">
+		<div className="flex flex-col justify-center items-center py-[40px] text-white bg-primary">
 			<div className="w-full text-center sm:flex-row flex-col justify-center items-center">
 				<h2
-					className="my-8 font-bio font-light sm:text-[80px] text-[50px] sm:leading-[124px] leading-[90px] uppercase"
+					className="mb-4 font-bio font-light sm:text-[80px] text-[50px] sm:leading-[124px] leading-[90px] uppercase"
 					data-aos="fade-up"
 				>
 					<span className="font-bold">Top</span> Shots
@@ -48,9 +48,7 @@ const Topshots = () => {
 			</div>
 			<Slider />
 			<div className="flex flex-col justify-center items-center" data-aos="fade-up">
-				<p className="font-normal sm:text-[48px] text-[28px] sm:leading-[56px]">
-					Mood and motivation board
-				</p>
+				<p className="font-normal sm:text-[48px] text-[28px] sm:leading-[56px]">Mood and motivation board</p>
 				<p className="font-light sm:text-[36px] text-[20px] sm:leading-[42px]">
 					You can see more by going to the gallery
 				</p>

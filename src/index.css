@@ -7,6 +7,7 @@
 
 :root {
 	--black-gradient: linear-gradient(144.39deg, #ffffff -278.56%, #3d3c39 -78.47%, #151616 91.61%);
+	--primary: #151615;
 	--card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 	--index: calc(1vw + 1vh);
 }
@@ -63,4 +64,20 @@
 	padding: 0;
 	width: calc(var(--index) * 45);
 	height: auto;
+}
+
+.container {
+	max-width: 1280px;
+}
+
+.formFocus {
+	transition: transform 0.3s ease;
+}
+
+.formFocus:hover {
+	transform: scale(1.05);
+}
+
+.formFocus:focus {
+	transform: scale(1.05);
 }

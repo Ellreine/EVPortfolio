@@ -8,7 +8,27 @@ import close from './close.svg';
 import menu from './menu.svg';
 import arrowRight from './arrow-right.svg';
 import arrowLeft from './arrow-left.svg';
+import imgAbout from './photoabout.jpg';
+import whatsapp from './icons/whatsapp.svg';
+import telegram from './icons/telegram.svg';
+import behance from './icons/behance.svg';
+import instagram from './icons/instagram.svg';
+import youtube from './icons/youtube.svg';
 
 const shots = [shot1, shot2, shot3, shot4];
 
-export { bg, logo, shots, close, menu, arrowLeft, arrowRight };
+export {
+	bg,
+	logo,
+	shots,
+	close,
+	menu,
+	arrowLeft,
+	arrowRight,
+	imgAbout,
+	whatsapp,
+	telegram,
+	behance,
+	instagram,
+	youtube,
+};
