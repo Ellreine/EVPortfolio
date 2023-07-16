@@ -4,6 +4,6 @@ import Footer from './Footer';
 import Gallery from './Gallery';
 import General from './General';
 import Navbar from './Navbar';
-import Topshorts from './Topshorts';
+import Topshots from './Topshots';
 
-export { About, CTA, Footer, Gallery, General, Navbar, Topshorts };
+export { About, CTA, Footer, Gallery, General, Navbar, Topshots };

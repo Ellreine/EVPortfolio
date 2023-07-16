@@ -1,15 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200;300;400;700;800&display=swap');
+@import 'react-slideshow-image/dist/styles.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.nav-link {
-	@apply font-bio uppercase mx-3 text-white;
+:root {
+	--black-gradient: linear-gradient(144.39deg, #ffffff -278.56%, #3d3c39 -78.47%, #151616 91.61%);
+	--card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+	--index: calc(1vw + 1vh);
+}
+
+* {
+	@apply scroll-smooth;
+}
+
+@layer components {
+	.nav-link {
+		@apply mx-6 font-normal text-[36px] leading-[52px] uppercase text-white cursor-pointer relative inline-block after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-0 after:left-0 after:bg-white after:origin-bottom-right transition-transform duration-300 ease-in-out hover:after:scale-x-100 hover:after:origin-bottom-left;
+	}
+
+	.nav-link::after {
+		@apply after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-0 after:left-0 after:bg-white after:origin-bottom-right transition-transform duration-300 ease-out;
+	}
 }
 
 .bg {
 	background-image: url(/src/assets/BG.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.sidebar {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+	0% {
+		-webkit-transform: translateY(100px);
+		transform: translateY(100px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes slide-top {
+	0% {
+		-webkit-transform: translateY(100px);
+		transform: translateY(100px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+.slider {
+	margin: 0;
+	padding: 0;
+	width: calc(var(--index) * 45);
+	height: auto;
 }

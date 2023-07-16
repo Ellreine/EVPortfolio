@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 
 const General = () => {
 	return (
-		<div className={`min-h-screen min-w-screen bg `}>
+		<div className="w-full bg overflow-hidden">
 			<Navbar />
 		</div>
 	);

@@ -6,7 +6,19 @@ export default {
 			fontFamily: {
 				bio: ['BioRhyme Expanded', 'serif'],
 			},
+			backgroundImage: {
+				'black-gradient': 'var(--black-gradient)',
+			},
+		},
+		screens: {
+			xs: '480px',
+			ss: '620px',
+			sm: '768px',
+			md: '1060px',
+			lg: '1200px',
+			xl: '1700px',
 		},
 	},
+
 	plugins: [],
 };
