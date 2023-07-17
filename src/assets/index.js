@@ -14,21 +14,16 @@ import telegram from './icons/telegram.svg';
 import behance from './icons/behance.svg';
 import instagram from './icons/instagram.svg';
 import youtube from './icons/youtube.svg';
+import gallery1 from './gallery/1.png';
+import gallery2 from './gallery/2.png';
+import gallery3 from './gallery/3.png';
+import gallery4 from './gallery/4.png';
+import poster1 from './gallery/Sunday Mother.png';
+import poster2 from './gallery/Captured Time.png';
 
 const shots = [shot1, shot2, shot3, shot4];
+const social = [whatsapp, telegram, behance, instagram, youtube];
+const sundayMother = [gallery1, gallery2, poster1];
+const capturedTime = [gallery3, gallery4, poster2];
 
-export {
-	bg,
-	logo,
-	shots,
-	close,
-	menu,
-	arrowLeft,
-	arrowRight,
-	imgAbout,
-	whatsapp,
-	telegram,
-	behance,
-	instagram,
-	youtube,
-};
+export { bg, logo, shots, close, menu, arrowLeft, arrowRight, imgAbout, social, capturedTime, sundayMother };

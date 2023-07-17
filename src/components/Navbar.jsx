@@ -12,8 +12,8 @@ const properties = {
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	return (
-		<nav className="w-full flex py-6 px-8 justify-between items-center">
-			<img src={logo} alt="logo" />
+		<nav className="w-full flex py-[calc(var(--index)*0.7)] px-[calc(var(--index)*2)] justify-between items-center">
+			<img src={logo} alt="logo" className="w-[calc(var(--index)*5)]" />
 
 			<div className="sm:flex hidden justify-end items-center flex-1">
 				{navBarLinks.map((link) => (
@@ -28,20 +28,20 @@ const Navbar = () => {
 					src={toggle ? close : menu}
 					alt="menu"
 					onClick={() => setToggle((prev) => !prev)}
-					className="w-[28px] h-[28px] object-contain"
+					className="menu-icon"
 				/>
 
 				<div
 					className={`${
 						toggle ? 'flex' : 'hidden'
-					} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10`}
+					} p-[calc(var(--index)*1.5)] bg-black-gradient absolute top-[calc(var(--index)*6)] right-0 mx-[calc(var(--index)*1.7)] my-[calc(var(--index))] w-[calc(var(--index)*12)] rounded-xl sidebar z-10`}
 				>
 					<ul className="list-none flex flex-col justify-end items-center flex-1">
 						{navBarLinks.map((link, index) => (
 							<li
 								key={link.id}
-								className={`nav-link m-0 leading-[40px] text-[16px] ${
-									index === navBarLinks.length - 1 ? 'mr-0' : 'mb-4'
+								className={`nav-link m-0 leading-[calc(var(--index)*2)] text-[calc(var(--index)*1.2)] ${
+									index === navBarLinks.length - 1 ? 'mr-0' : 'mb-[calc(var(--index)*1.1)]'
 								}`}
 							>
 								<Link to={link.id} {...properties}>

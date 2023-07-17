@@ -18,7 +18,7 @@
 
 @layer components {
 	.nav-link {
-		@apply mx-6 font-normal text-[36px] leading-[52px] uppercase text-white cursor-pointer relative inline-block after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-0 after:left-0 after:bg-white after:origin-bottom-right transition-transform duration-300 ease-in-out hover:after:scale-x-100 hover:after:origin-bottom-left;
+		@apply mx-[1.6%] font-normal text-[calc(var(--index)*1.6)] leading-[calc(var(--index)*2)] uppercase text-white cursor-pointer relative inline-block after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-0 after:left-0 after:bg-white after:origin-bottom-right transition-transform duration-300 ease-in-out hover:after:scale-x-100 hover:after:origin-bottom-left;
 	}
 
 	.nav-link::after {
@@ -59,11 +59,29 @@
 	}
 }
 
-.slider {
-	margin: 0;
-	padding: 0;
-	width: calc(var(--index) * 45);
-	height: auto;
+@layer components {
+	.slider {
+		margin: calc(var(--index) * 2) 0;
+		padding: 0;
+		height: auto;
+	}
+}
+
+.gallery-img {
+	width: calc(var(--index) * 23);
+}
+
+.social-icon {
+	width: calc(var(--index) * 1.3);
+	height: calc(var(--index) * 1.3);
+	object-fit: contain;
+	margin: 0 4px;
+}
+
+.menu-icon {
+	width: calc(var(--index) * 3);
+	height: calc(var(--index) * 3);
+	object-fit: contain;
 }
 
 .container {
@@ -71,7 +89,7 @@
 }
 
 .formFocus {
-	transition: transform 0.3s ease;
+	transition: transform 0.3s ease-in-out;
 }
 
 .formFocus:hover {

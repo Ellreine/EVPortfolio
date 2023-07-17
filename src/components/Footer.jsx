@@ -1,39 +1,30 @@
-import { behance, instagram, telegram, youtube, whatsapp } from '../assets';
+import { social } from '../assets';
 
 const Footer = () => {
 	return (
-		<div className={'bg-neutral-800 h-[200px] flex flex-col justify-center items-center text-center uppercase text-xl'}>
-			<div className={'container flex flex-col gap-16'}>
-				<div className={'text-white  flex justify-around items-center '}>
-					<div className={'w-[200px]'}>
+		<footer className="bg-primary w-full py-6 mt-10 flex flex-col justify-center items-center text-center uppercase text-[calc(var(--index)*0.8)]">
+			<div className="w-full flex flex-col">
+				<div className="mb-12 flex justify-around items-center text-white">
+					<div className="mx-6">
 						<a href="mailto:eva.vexler13@gmail.com" type="email">
-							send message
+							Send message
 						</a>
 					</div>
-					<div className={' w-[200px]'}>
-						<a href="">eva vexler</a>
-					</div>
-					<div className={'w-[200px] h-[32px] flex flex-row gap-2 justify-between items-center'}>
-						<a href="">
-							<img className={'w-[32px] h-[32px]'} src={behance} alt="" />
-						</a>
-						<a href="">
-							<img className={'w-[32px] h-[32px]'} src={instagram} alt="" />
-						</a>
-						<a href="">
-							<img className={'w-[32px] h-[32px]'} src={youtube} alt="" />
-						</a>
-						<a href="">
-							<img className={'w-[32px] h-[32px]'} src={whatsapp} alt="" />
-						</a>
-						<a href="">
-							<img className={'w-[32px] h-[32px]'} src={telegram} alt="" />
-						</a>
+
+					<div className="mx-6 flex flex-row justify-between items-center">
+						{social.map((item, index) => (
+							<a key={index} href="">
+								<img className="social-icon" src={item} alt="icon" />
+							</a>
+						))}
 					</div>
 				</div>
-				<div className={'text-white text-lg opacity-50 '}> &#xa9; all right reserved</div>
+
+				<div className="capitalize text-white text-[calc(var(--index)*0.8)] opacity-50">
+					<span>&#xa9; All right reserved</span>
+				</div>
 			</div>
-		</div>
+		</footer>
 	);
 };
 
